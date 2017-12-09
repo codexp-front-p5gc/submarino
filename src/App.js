@@ -9,6 +9,7 @@ import Livro from "./img/livro.jpg";
 import Smarttv from "./img/smarttv.png";
 import Game from "./img/game.png";
 import "./App.css";
+import "./components/21-saleitem/saleitem"
 
 
 var products = [
@@ -118,3 +119,9 @@ export default () => (
         <SectionProduct title="Mais vendidos" products={bestSeller()} />
     </div>
 )
+
+export default () => (
+  <div className="saleitem">
+    <sale-item__tag tag="Novo"/>
+  </div>
+);
