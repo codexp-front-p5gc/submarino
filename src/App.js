@@ -9,7 +9,9 @@ import Livro from "./img/livro.jpg";
 import Smarttv from "./img/smarttv.png";
 import Game from "./img/game.png";
 import "./App.css";
-import "./components/21-saleitem/saleitem"
+import SaleItem from "./components/21-saleitem/saleitem";
+import T4k from "./img/1200/TV-A.png";
+import Prime from "./img/prime.png"
 
 
 var products = [
@@ -113,15 +115,22 @@ function offer() {
     return filtered;
 }
 
-export default () => (
-    <div className="app">
-        <SectionProduct title="Ofertas" products={offer()} />
-        <SectionProduct title="Mais vendidos" products={bestSeller()} />
-    </div>
-)
+var saleImage ={
+    src: Livro,
+    alt: "Televisão 4K",
+}
+
+var product ={
+    title: "Smart TV Led 49'LG com Conversor",
+    price: 2499.00,
+    paymentOptions: {
+        installments: 10 ,
+        value: 263.05
+    }
+}
 
 export default () => (
   <div className="saleitem">
-    <sale-item__tag tag="Novo"/>
+    <SaleItem tag="Novo" image={saleImage} timer="14:341:59" title={product.title} price={product.price} paymentOptions={product.paymentOptions} />
   </div>
 );
