@@ -121,7 +121,7 @@ var saleImage ={
 }
 
 var product ={
-    title: "Smart TV Led 49'LG com Conversor",
+    title: "Smart TV Led 49'LG 49UJ6525 com Conversor ",
     price: 2499.00,
     paymentOptions: {
         installments: 10 ,
