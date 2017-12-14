@@ -1,5 +1,5 @@
 import React from "react";
-import SectionProduct from "./components/SectionProduct/SectionProduct";
+// import SectionProduct from "./components/SectionProduct/SectionProduct";
 import Notebook from "./img/notebook.jpg";
 import Chapinha from "./img/chapinha.jpg";
 import Smartphone from "./img/smartphone.png";
@@ -10,7 +10,7 @@ import Smarttv from "./img/smarttv.png";
 import Game from "./img/game.png";
 import "./App.css";
 import SaleItem from "./components/21-saleitem/saleitem";
-import T4k from "./img/1200/TV-A.png";
+import Televisao4k from "./img/1200/TV-A.PNG";
 import Prime from "./img/prime.png"
 
 
@@ -116,7 +116,7 @@ function offer() {
 }
 
 var saleImage ={
-    src: Livro,
+    src: Televisao4k,
     alt: "Televisão 4K",
 }
 
@@ -131,6 +131,6 @@ var product ={
 
 export default () => (
   <div className="saleitem">
-    <SaleItem tag="Novo" image={saleImage} timer="14:341:59" title={product.title} price={product.price} paymentOptions={product.paymentOptions} />
+    <SaleItem image={saleImage} timer="14:34:59" title={product.title} price={product.price} paymentOptions={product.paymentOptions} />
   </div>
 );

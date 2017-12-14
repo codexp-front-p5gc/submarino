@@ -1,18 +1,27 @@
 import React from "react";
 import "./saleitem.css";
-import T4k from "../../img/1200/TV-A.png";
-import Prime from "../../img/prime.png"
+import Prime from "../../img/prime.png";
 
 
 export default (props) => (
     <div className="sale-item">
-        <h5 className="sale-item__tag">{props.tag}</h5>
-        <img className="sale-item__image" src={props.image.src} alt={props.image.alt}/>
-        <h3 className="sale-item__timer">Acaba em {props.timer}</h3>
-        <h4 className="sale-item__title">{props.title}</h4>
-        <p className="sale-item__infull">1x no cartão de crédito por:</p>
-        <p className="sale-item__price">R$ {props.price}</p>
-        <img className="sale-item__prime" src={Prime}/>
-        <p className="sale-item__payment-options">{props.paymentOptions.installments}x de R${props.paymentOptions.value} sem juros.</p>
+        <div className="sale-item-image">
+            <img src={props.image.src} alt={props.image.alt}/>
+        </div>
+        <div className="sale-item-info">
+            <div className="sale-item-info__timer">
+                <h3>Acaba em {props.timer}</h3>
+            </div>
+            <div className="sale-item-info-description">
+                <div className="info-description__cut"></div>
+                <h4 className="info-description__title">{props.title}</h4>
+                <p className="info-description__infull">1x no cartão de crédito por:</p>
+                <div className="info-description-price">
+                    <p className="info-description-price__value">R$ {props.price}</p>
+                    <img className="info-description-price__prime" src={Prime} alt="logo do Submarino Prime"/>
+                </div>
+                <p className="info-description__payment-options">{props.paymentOptions.installments}x de R${props.paymentOptions.value} sem juros.</p>
+            </div>
+        </div>
     </div>
 );
