@@ -1,6 +1,6 @@
 import React from "react";
 import "./saleitem.css";
-import Prime from "../../img/prime.png";
+import Prime from "../../img/prime.PNG";
 
 
 export default (props) => (

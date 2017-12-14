@@ -63,8 +63,20 @@ var products = [
     }
 ]
 
+function almostdone() {
+    var filtered = [];
+
+    for (var indice = 0; indice < products.length; indice++) {
+        if (products[indice].timer="14:34:59") {
+            filtered.push(products[indice]);
+        }
+    }
+
+    return filtered;
+}
+
 export default () => (
     <div className="App">
-        <Sale title="Sale Itens" />
+        <Sale title="Sale Itens" products={almostdone()}/>
     </div>
 );
