@@ -1,0 +1,17 @@
+
+@media screen and (min-width: 768px) {  
+.section-sale__items {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+}
+
+
+@media screen and (min-width: 992px) {  
+        .section-sale {
+        display: flex;
+        justify-content: center;
+    }
+
+    }

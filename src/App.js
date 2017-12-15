@@ -77,6 +77,8 @@ function almostdone() {
 
 export default () => (
     <div className="App">
-        <Sale title="Sale Itens" products={almostdone()}/>
+        <Sale products={almostdone()}/>
     </div>
 );
+
+

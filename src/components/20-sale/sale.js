@@ -15,7 +15,6 @@ function items(products) {
 
 export default (props) => (
     <section className="section-sale">
-        <h1>{props.title}</h1>
         <div className="section-sale__items">
             {items(props.products)}
         </div>
