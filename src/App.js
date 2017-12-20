@@ -77,7 +77,7 @@ function almostdone() {
 
 export default () => (
     <div className="App">
-        <Sale products={almostdone()}/>
+        <Sale products={products}/>
     </div>
 );
 
